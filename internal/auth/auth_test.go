@@ -16,7 +16,7 @@ func TestGetAPIKey(t *testing.T) {
 			name:    "No Auth Header",
 			headers: http.Header{},
 			want:    "",
-			wantErr: false,
+			wantErr: true,
 		},
 		{
 			name:    "Malformed Header",
