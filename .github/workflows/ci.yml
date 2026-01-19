@@ -34,3 +34,8 @@ jobs:
 
         - name: Check code style
           run: test -z $(go fmt ./...)
+        
+        - name: Check linter
+          uses: dominikh/staticcheck-action@v1
+          with:
+            version: "latest"
